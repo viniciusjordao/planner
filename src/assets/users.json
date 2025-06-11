@@ -1,0 +1,62 @@
+{
+    "users": [
+        {
+            "nome":  "Felipe Lorem",
+            "calorias totais": "",
+            "macronutrientes": 
+                {
+                    "carboidrato": 2.000,
+                    "proteina": 2.000,
+                    "doce": 5.000,
+                    "graos": 1000
+                }
+         },
+         {
+            "nome":  "Renato Lorem",
+            "calorias totais": "",
+            "macronutrientes": 
+                {
+                    "carboidrato": 2.000,
+                    "proteina": 2.000,
+                    "doce": 5.000,
+                    "graos": 1000
+                }
+         },
+         {
+            "nome":  "Rosana Lorem",
+            "calorias totais": "",
+            "macronutrientes": 
+                {
+                    "carboidrato": 2.000,
+                    "proteina": 2.000,
+                    "doce": 5.000,
+                    "graos": 1000
+                }
+         },
+         {
+            "nome":  "Luana Lorem",
+            "calorias totais": "",
+            "macronutrientes": 
+                {
+                    "carboidrato": 2.000,
+                    "proteina": 2.000,
+                    "doce": 5.000,
+                    "graos": 1000
+                }
+         },
+         {
+            "nome":  "Artur Lorem",
+            "calorias totais": "",
+            "macronutrientes": 
+                {
+                    "carboidrato": 2.000,
+                    "proteina": 2.000,
+                    "doce": 5.000,
+                    "graos": 1000
+                }
+         }
+    ]
+
+}
+    
+   
