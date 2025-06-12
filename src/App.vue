@@ -65,7 +65,7 @@ const users = ref([
   }
 ])
 
-localStorage.users = users
+//localStorage.users = users
 
 </script>
 
@@ -81,13 +81,11 @@ localStorage.users = users
 .container{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 @media (min-width: 1024px) {
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.container{
+  justify-content: flex-start;
+}
 }
 </style>

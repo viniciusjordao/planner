@@ -5,6 +5,8 @@ const props = defineProps({
 })
 
 const open = ref(false)
+const carbo = ref('')
+
 
 const  { user } = props
 
@@ -13,9 +15,7 @@ const caloriasTotais =
     user.macronutrientes.prot +
     user.macronutrientes.doce +
     user.macronutrientes.graos 
-
-
-  
+    
 
 </script>
 
@@ -24,13 +24,14 @@ const caloriasTotais =
     <img/>
     <div>{{ user.name }}</div>
     <div>Calorias Totais: {{caloriasTotais}}</div>
-    <div @click="open = true">Plano Alimentar</div>
+    <div @click="open = true" class="link" >Plano Alimentar</div>
     </li>
     <div v-if="open" class="modal-content">
     <p>Carboidratos: {{user.macronutrientes.carbo}}</p>
     <p>Proteínas: {{user.macronutrientes.prot}}</p>
     <p>Doces: {{user.macronutrientes.doce}}</p>
     <p>Graos: {{user.macronutrientes.graos}}</p>
+    <input v-model="carbo">
     <h3>{{ caloriasTotais }}</h3>
     <button @click="open = false">Close</button>
   </div>
@@ -40,13 +41,19 @@ const caloriasTotais =
 <style scoped>
 .card{
  list-style: none ;
- padding: 20px 44px;
+ padding: 20px;
+ text-align: center;
 }
 
 .card img{
   width: 150px;
   height: 200px;
   background-color: blueviolet;
+}
+
+.link{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .modal {
@@ -71,6 +78,12 @@ const caloriasTotais =
   background-color: aliceblue;
   padding: 20px;
   color: black;
+}
+
+@media (min-width: 1024px) {
+  .card{
+    padding: 20px 44px;
+  }
 }
 
 </style>
